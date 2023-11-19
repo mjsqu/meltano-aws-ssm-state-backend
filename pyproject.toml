@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "meltano-state-ssm-plugin"
+description = "A Meltano State Backend for AWS SSM"
+version = "0.0.1"
+authors = ["Mark Johnston <mj2.squ@gmail.com>"]
+
+[tool.poetry.dependencies]
+boto3 = {version = "^1.28.84"}
+
+[build-system]
+requires = ["poetry-core==1.7.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."meltano.state_backends"]
+"ssm-parameter" = "meltano_state_ssm_plugin.ssm:SSMStateStoreManager"
