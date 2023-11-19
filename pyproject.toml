@@ -12,4 +12,4 @@ requires = ["poetry-core==1.7.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.plugins."meltano.state_backends"]
-"ssm-parameter" = "meltano_state_ssm_plugin.ssm:SSMStateStoreManager"
+"ssm-parameter" = "meltano_ssm_parameter_state_backend.ssm:SSMStateStoreManager"
