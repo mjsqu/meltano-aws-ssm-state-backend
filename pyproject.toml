@@ -6,6 +6,7 @@ authors = ["Mark Johnston <mj2.squ@gmail.com>"]
 
 [tool.poetry.dependencies]
 boto3 = {version = "^1.28.84"}
+meltano = { git = "https://github.com/meltano/meltano.git", branch = "state-backend-plugins" }
 
 [build-system]
 requires = ["poetry-core==1.7.0"]
